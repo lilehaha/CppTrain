@@ -127,7 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CPPTrain.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="KString\KString.cpp" />
+    <ClCompile Include="TestCases\TestCases.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KString\KString.h" />
+    <ClInclude Include="TestCases\TestCases.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

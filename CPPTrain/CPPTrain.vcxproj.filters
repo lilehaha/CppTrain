@@ -15,8 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CPPTrain.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="KString\KString.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCases\TestCases.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KString\KString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCases\TestCases.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
