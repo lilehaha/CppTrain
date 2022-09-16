@@ -97,39 +97,22 @@ int KString::Find(const char* cstr)
 
 KString* KString::Split(const char* str)
 {
-	int index = 0;
-	int length = mLen;
-	KString* temp = new KString[length];
-	KString subString = KString(*this);
-	KString* pTemp = temp;
-	int count = 0;
-	while (index != -1)
+	int alength = 0, length = Len();
+	for (int i = 0; i < length; i++)
+		if (mData[i] == *str)
+			alength++;
+	KString* StrArr = new KString[alength + 1];
+	StrArr->Len();
+	int Begin = 0, aIndex = 0;
+	for (int i = 0; i < length;)
 	{
-		index = subString.Find(str);
-		if (index > 0)
-		{
-			auto str1 = subString.Sub(0, index);
-			subString = subString.Sub(index, subString.Len() - index);
-			*pTemp = str1;
-			count++;
-			pTemp++;
-		}
+		while (i <= length && mData[i++] != *str) {}
+
+		StrArr[aIndex++] = Sub(Begin, i - Begin - 1);
+		Begin = i;
 	}
-	if (count == 0)
-	{
-		delete[] temp;
-		return nullptr;
-	}
-	else
-	{
-		KString* result = new KString[count];
-		for (int i = 0; i < count; i++)
-		{
-			result[i] = temp[i];
-		}
-		//delete[] temp;
-		return result;
-	}
+	StrArr->Len();
+	return StrArr;
 }
 
 KString::~KString()

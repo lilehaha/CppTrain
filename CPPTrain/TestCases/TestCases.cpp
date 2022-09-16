@@ -32,5 +32,6 @@ void TestCases::TestKString()
 	cout << index << endl;
 
 	KString* ret = str2.Split(",");
-	cout << ret << endl;
+	cout << ret[0] << endl;
+	cout << ret[1] << endl;
 }
