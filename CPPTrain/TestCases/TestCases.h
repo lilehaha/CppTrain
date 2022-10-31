@@ -5,6 +5,7 @@ public:
 	TestCases();
 	~TestCases();
 	void TestKString();
+	void TestKArray();
 private:
 
 };

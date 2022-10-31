@@ -1,5 +1,6 @@
 #include "TestCases.h"
 #include "../KString/KString.h"
+#include "../KArray/KArray.h"
 #include "iostream"
 
 using namespace std;
@@ -34,4 +35,18 @@ void TestCases::TestKString()
 	KString* ret = str2.Split(",");
 	cout << ret[0] << endl;
 	cout << ret[1] << endl;
+}
+
+void TestCases::TestKArray()
+{
+	auto arr = new KArray<int>();
+	arr->reserve(4);
+	arr->push(1);
+	arr->push(2);
+	arr->insert(1, 3);
+	arr->remove(1);
+	arr->pop();
+	arr->clear();
+	arr->print();
+
 }

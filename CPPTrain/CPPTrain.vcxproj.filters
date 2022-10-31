@@ -24,12 +24,18 @@
     <ClCompile Include="TestCases\TestCases.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="KArray\KArray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="KString\KString.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="TestCases\TestCases.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KArray\KArray.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
