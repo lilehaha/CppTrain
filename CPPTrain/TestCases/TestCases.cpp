@@ -1,6 +1,7 @@
 #include "TestCases.h"
 #include "../KString/KString.h"
 #include "../KArray/KArray.h"
+#include "../KList/KList.h"
 #include "iostream"
 
 using namespace std;
@@ -48,5 +49,16 @@ void TestCases::TestKArray()
 	arr->pop();
 	arr->clear();
 	arr->print();
+}
 
+void TestCases::TestKList()
+{
+	auto list1 = new KList<int>();
+	auto node1 = list1->push(1);
+	auto node2 = list1->push(2);
+	auto node3 = list1->insert(node2, 3);
+	auto ret = list1->find(2);
+	list1->remove(node2);
+	list1->popAll();
+	list1->printlist();
 }

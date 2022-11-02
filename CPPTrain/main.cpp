@@ -6,9 +6,7 @@ using namespace std;
 int main()
 {
     TestCases t;
-    /*t.TestKString();
-    string s("sss");
-    s.substr(1, 2);*/
-    
-    t.TestKArray();
+    //t.TestKString();
+    //t.TestKArray();
+    t.TestKList();
 }

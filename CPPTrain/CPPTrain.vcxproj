@@ -127,13 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="KArray\KArray.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="KString\KString.cpp" />
     <ClCompile Include="TestCases\TestCases.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="KArray\KArray.h" />
+    <ClInclude Include="KList\KList.h" />
     <ClInclude Include="KString\KString.h" />
     <ClInclude Include="TestCases\TestCases.h" />
   </ItemGroup>
