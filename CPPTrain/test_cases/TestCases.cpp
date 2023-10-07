@@ -66,9 +66,15 @@ void TestCases::TestKList()
 
 void TestCases::TestKRingBuffer()
 {
-	//auto ringBuffer = new KRingBuffer(10);
-	//auto c = "abcdefghij";
-	//ringBuffer->write(c, 10);
-	//ringBuffer->write(c, 20);
-	//ringBuffer->capacity();
+	KRingBuffer<int> rb;
+	for (int i = 1; i <= 16; i++) {
+		rb.push(i);
+	}
+	std::cout << "Buffer size: " << rb.getSize() << std::endl;
+
+	for (int i = 0; i < 12; i++) {
+		std::cout << rb.pop() << " ";
+	}
+	std::cout << std::endl;
+	std::cout << "Buffer size: " << rb.getSize() << std::endl;
 }

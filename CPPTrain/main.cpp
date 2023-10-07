@@ -9,5 +9,5 @@ int main()
     //t.TestKString();
     //t.TestKArray();
     //t.TestKList();
-    t.TestKRingBuffer();
+    //t.TestKRingBuffer();
 }

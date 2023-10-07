@@ -127,7 +127,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ring_buffer\KRingBuffer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="string\KString.cpp" />
     <ClCompile Include="test_cases\TestCases.cpp" />
